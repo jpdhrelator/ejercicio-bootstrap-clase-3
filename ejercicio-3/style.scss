@@ -1,0 +1,20 @@
+
+
+// @use "../scss/bootstrap" as b;
+
+// .btn-outline-ghost { @include b.button-outline-variant(#c538db); }
+
+
+// // 1. Importar funciones y variables base primero
+// @import "../scss/functions";
+// @import "../scss/variables";
+
+// // 2. Ahora que $theme-colors YA EXISTE, podemos crear el nuestro y mezclarlo
+// $custom-colors: (
+//   "brand": #11ff51
+// );
+
+// $theme-colors: map-merge($theme-colors, $custom-colors);
+
+// // 3. Importar el resto de Bootstrap
+// @import "../scss/bootstrap";

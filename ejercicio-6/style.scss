@@ -1,0 +1,16 @@
+// @use "../scss/bootstrap"  with ( 
+//   $success: #95e1d3,
+//   $spinner-width: 10px, 
+//   $spinner-height: 10px
+//   );
+
+
+// _config.scss (o tu archivo principal)
+@use "../scss/functions" as *;
+@use "../scss/variables" as v; // v de variables
+
+$new-breakpoints: map-merge(v.$grid-breakpoints, (tmini: 600px));
+
+@use "../scss/bootstrap" with (
+  $grid-breakpoints: $new-breakpoints
+); 
